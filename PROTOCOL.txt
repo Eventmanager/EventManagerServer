@@ -56,9 +56,10 @@ To request news posts:
 			'posts':
 			[
 				{
-					'title': <Post title>
-					'date': <A UTC date and time, formatted as "YYYY-MM-DD HH:MM:SS">
-					'contents': <Post contents, formatting TBD>
+					'title': <Post title>,
+					'id': <Post ID>,
+					'date': <A UTC date and time, formatted as "YYYY-MM-DD HH:MM:SS">,
+					'contents': <Post contents, formatting TBD>,
 				},
 			]
 		}
@@ -68,3 +69,28 @@ To request news posts:
 		- The server won't care much about the way posts are formatted, as the server only stores them. 
 		  It is up to the app developers to determine which way of formatting works best for them.
 
+
+To request the event schedule:
+	Request:
+		HTTP GET /events
+	Response:
+	{
+		'success': true,
+		'result':
+		{
+			'events':
+			[
+				{
+					'title': <Event Title>,
+					'id': <Event ID>,
+					'date': <A UTC date and time, formatted as "YYYY-MM-DD HH:MM:SS">,
+					'contents': <Event details, formatting TBD>,
+					'location':
+					{
+						'latitude': <Latitude>,
+						'lognitude': <Lognitude>
+					}
+				}
+			]
+		}
+	}
