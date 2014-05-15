@@ -1,0 +1,70 @@
+In general, an HTTP GET will return a JSON object.
+An HTTP POST will indicate success or failure trough HTTP status codes.
+If the HTTP server itself fails, a GET will return an HTTP error code.
+If there is an internal error within the server, or if the client provides invalid data, a JSON object will be returned,
+detailing what has gone wrong.
+All JSON objects that are returned will follow this format:
+If the request was successful:
+{
+	'success': true,
+	'result':
+	{
+		// Data
+	}
+}
+If the request failed:
+{
+	'success': false,
+	'error': 
+	{
+		'code': <Error code>,
+		'description': <Description of error>
+	}
+}
+
+To request a new appID:
+	Request:
+		HTTP GET /app-id
+	Response:
+	{
+		'success': true,
+		'result':
+		{
+			'app-id': <Randomly generated Unique ID>
+		}
+	}
+
+To give the server an update about the client's location
+	Request:
+		HTTP POST /location-update
+		Data:
+			app-id: <AppID>
+			latitude: <latitude>
+			lognitude: <lognitude>
+
+To request news posts:
+	Request:
+		HTTP GET /news
+		Query parameters:
+			count: An integer, greater than 0, less than 100.
+			before: A UTC date and time, formatted as "YYYY-MM-DD HH:MM:SS".
+	Response:
+	{
+		'success': true,
+		'result':
+		{
+			'posts':
+			[
+				{
+					'title': <Post title>
+					'date': <A UTC date and time, formatted as "YYYY-MM-DD HH:MM:SS">
+					'contents': <Post contents, formatting TBD>
+				},
+			]
+		}
+	}
+	Notes:
+		- Conversion to and from UTC should be done by the app. The server only accepts and provides UTC dates.
+		- The server won't care much about the way posts are formatted, as the server only stores them. 
+		  It is up to the app developers to determine which way of formatting works best for them.
+
