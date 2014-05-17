@@ -1,0 +1,10 @@
+C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\EventManagerServer.exe.config
+C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\EventManagerServer.exe
+C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\EventManagerServer.pdb
+C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\System.Web.Http.dll
+C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\System.Web.Http.xml
+C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\obj\Debug\EventManagerServer.exe
+C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\obj\Debug\EventManagerServer.pdb
+C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\obj\Debug\EventManagerServer.csprojResolveAssemblyReference.cache
