@@ -10,6 +10,11 @@ using System.Threading;
 
 namespace EventManagerServer
 {
+	interface IRequestGenerator
+	{
+		event EventHandler<RequestContainer> OnPOST;
+		event EventHandler<RequestContainer> OnGET;
+	}
 	struct RequestContainer
 	{
 		public HttpListenerContext Context;
@@ -22,7 +27,7 @@ namespace EventManagerServer
 			Writer = writer;
 		}
 	}
-	class HttpHandler
+	class HttpHandler : IRequestGenerator
 	{
 		private HttpListener listener;
 		private HttpListenerContext context;

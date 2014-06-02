@@ -42,3 +42,80 @@
 [mei 17 - 19:04:50.330]	[DEB]	listener.GetContext() call aborted as the listener has stopped.
 [mei 17 - 19:04:50.330]	[DEB]	HTTP Listener shutdown.
 [mei 17 - 19:04:50.334]	[INF]	Goodbye.
+[mei 18 - 01:57:44.658]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 18 - 01:59:17.859]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 19 - 00:31:24.950]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 19 - 00:31:45.342]	[DEB]	listener.GetContext() call aborted as the listener has stopped.
+[mei 19 - 00:31:45.342]	[DEB]	HTTP Listener shutdown.
+[mei 19 - 00:31:45.345]	[INF]	Goodbye.
+[mei 19 - 00:34:37.675]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 19 - 00:36:08.054]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 19 - 00:37:53.814]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 19 - 00:38:32.813]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 19:38:26.972]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 19:51:15.321]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 19:51:27.966]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 19:52:37.765]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 19:52:40.694]	[DEB]	listener.GetContext() call aborted as the listener has stopped.
+[mei 26 - 19:52:40.694]	[DEB]	HTTP Listener shutdown.
+[mei 26 - 19:52:40.700]	[INF]	Goodbye.
+[mei 26 - 20:13:14.237]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:27:47.808]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:28:50.321]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:30:39.274]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:31:08.422]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:31:12.682]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:31:22.186]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:31:48.591]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:32:03.772]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:32:28.858]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:32:31.240]	[DEB]	listener.GetContext() call aborted as the listener has stopped.
+[mei 26 - 20:32:31.240]	[DEB]	HTTP Listener shutdown.
+[mei 26 - 20:32:31.243]	[INF]	Goodbye.
+[mei 26 - 20:32:34.902]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:34:37.480]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:34:39.741]	[DEB]	listener.GetContext() call aborted as the listener has stopped.
+[mei 26 - 20:34:39.741]	[DEB]	HTTP Listener shutdown.
+[mei 26 - 20:34:39.745]	[INF]	Goodbye.
+[mei 26 - 20:34:43.822]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:51:37.448]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:52:21.036]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:52:45.229]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:53:51.962]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:58:17.009]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 26 - 20:59:20.041]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 30 - 17:30:10.135]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 30 - 17:48:44.659]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:03:21.473]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:08:28.269]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:09:25.549]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:13:31.743]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:18:34.101]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:19:56.857]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:20:14.596]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:20:25.355]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:20:32.287]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:22:31.450]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:23:46.647]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:24:36.279]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:40:40.464]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:42:26.677]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:42:28.360]	[DEB]	GET newsSystem.Collections.Specialized.NameValueCollection
+[mei 31 - 15:45:42.812]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:45:46.583]	[DEB]	GET news
+[mei 31 - 15:46:23.232]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:46:33.795]	[DEB]	GET news
+[mei 31 - 15:47:13.936]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:47:30.328]	[DEB]	GET news
+[mei 31 - 15:48:11.222]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:48:16.140]	[DEB]	GET news?after=2014-05-26 18:13:13&count=2
+[mei 31 - 15:48:37.264]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:48:39.162]	[DEB]	GET news - after=2014-05-26 18:13:13&count=2
+[mei 31 - 15:48:50.368]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:48:52.282]	[DEB]	GET news - after=2014-05-26 18:13:13 - count=2
+[mei 31 - 15:49:13.584]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:49:15.586]	[DEB]	GET news || after=2014-05-26 18:13:13 || count=2
+[mei 31 - 15:49:55.783]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:49:57.872]	[DEB]	GET news after=2014-05-26 18:13:13&count=2
+[mei 31 - 15:50:05.071]	[INF]	HTTP Server Started. Press Enter to exit.
+[mei 31 - 15:50:07.135]	[DEB]	GET news?after=2014-05-26 18:13:13&count=2

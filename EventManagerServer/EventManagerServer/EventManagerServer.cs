@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using EventManagerServer.Database;
 using System.Security.Principal;
 using System.Diagnostics;
 
@@ -12,29 +13,15 @@ namespace EventManagerServer
 	class EventManagerServer
 	{
 		private HttpHandler httpHandler;
+		private RequestManager requestManager;
+		private DatabaseWrapper databaseWrapper;
 
 		public void Start()
 		{
 			httpHandler = new HttpHandler();
-			httpHandler.OnGET += (sender, container) =>
-			{
-				Logger.Log("Handling GET request");
-				container.Writer.Write(
-@"{
-	'success': true,
-	'result':
-	{
-		'requested-page': '"
-+ container.Context.Request.Url.AbsolutePath +
-@"'
-	}
-}");
-			};
-			httpHandler.OnPOST += (sender, container) =>
-			{
-				Logger.Log("Handling POST request");
-				container.Writer.Write(container.Reader.ReadToEnd());
-			};
+			databaseWrapper = new DatabaseWrapper();
+			databaseWrapper.Connect();
+			requestManager = new RequestManager(databaseWrapper, httpHandler);
 
 			httpHandler.StartServer();
 

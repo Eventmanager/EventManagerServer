@@ -7,4 +7,10 @@ C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManag
 C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\obj\Debug\EventManagerServer.exe
 C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\obj\Debug\EventManagerServer.pdb
+C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\MongoDB.Bson.dll
+C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\MongoDB.Driver.dll
+C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\MongoDB.Bson.xml
+C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\MongoDB.Driver.xml
+C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Johan\Documents\GitHub\EventManagerServer\EventManagerServer\EventManagerServer\obj\Debug\EventManagerServer.csprojResolveAssemblyReference.cache

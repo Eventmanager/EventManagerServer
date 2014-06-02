@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EventManagerServer
+namespace EventManagerServer.Database.Objects
 {
-	class DatabaseWrapper
+	class Event
 	{
 	}
 }
