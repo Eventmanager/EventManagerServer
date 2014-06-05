@@ -54,11 +54,10 @@ namespace EventManagerServer.Database
             }
 
             var response = new JObject(
-                new JProperty("success", true),
-                new JProperty("result", new JObject(
-                    new JProperty("events", new JArray(
-                        postObject.ToArray())
-                        ))
+                /*new JProperty("success", true),
+                new JProperty("result", new JObject(*/
+                new JProperty("events", new JArray(
+                    postObject.ToArray())
                     )
                 );
 
@@ -83,11 +82,10 @@ namespace EventManagerServer.Database
 				postObjects.Add(obj);
 			}
 			var response = new JObject(
-				new JProperty("success", true),
-				new JProperty("result", new JObject(
-					new JProperty("posts", new JArray(
-						postObjects.ToArray())
-					))
+				/*new JProperty("success", true),
+				new JProperty("result", new JObject(*/
+				new JProperty("posts", new JArray(
+					postObjects.ToArray())
 				)
 			);
 
