@@ -87,6 +87,7 @@ namespace EventManagerServer
 		private void HandleGetEvents(RequestContainer args)
 		{
 			var events = databaseWrapper.GetEvents();
+            args.Writer.WriteLine(events);
 		}
 	}
 }

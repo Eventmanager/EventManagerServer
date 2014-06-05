@@ -1,3 +1,6 @@
+PROTOCOL IS NO LONGER BEING UPDATED!!!
+information may have expired
+
 In general, an HTTP GET will return a JSON object.
 An HTTP POST will indicate success or failure trough HTTP status codes.
 If the HTTP server itself fails, a GET will return an HTTP error code.

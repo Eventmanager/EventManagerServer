@@ -34,11 +34,36 @@ namespace EventManagerServer.Database
 			eventCollection = database.GetCollection<Event>("events");
 
 			//newsPostCollection.Insert(new NewsPost() { Contents = "very first test post", Date = DateTime.Parse("2009-02-20 14:39:54"), Title = "THE VERY FIRST TEST POST" });
-		}
+            //eventCollection.Insert(new Event() { Title = "TestEvent1", StartTime = DateTime.Parse("2014-05-06 12:30:00"), EndTime = DateTime.Parse("2014-05-06 14:00:00"), Stage = "TestStage1" });
+        }
 
 		internal object GetEvents()
 		{
-			throw new NotImplementedException();
+            var entities = eventCollection.FindAllAs<Event>();
+
+            var postObject = new List<JObject>();
+            foreach(var entity in entities) { 
+                var obj = new JObject(
+                    new JProperty("id", entity.Id.ToString()),
+                    new JProperty("title", entity.Title),
+                    new JProperty("starttime", entity.StartTime.ToString("yyyy-MM-dd HH:mm:ss")),
+                    new JProperty("endtime", entity.EndTime.ToString("yyyy-MM-dd HH:mm:ss")),
+                    new JProperty("stage", entity.Stage)
+                );
+                postObject.Add(obj);
+            }
+
+            var response = new JObject(
+                new JProperty("success", true),
+                new JProperty("result", new JObject(
+                    new JProperty("events", new JArray(
+                        postObject.ToArray())
+                        ))
+                    )
+                );
+
+            var jsonString = response.ToString();
+            return jsonString;
 		}
 
 		internal string GetNews(int count, DateTime after)
