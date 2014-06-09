@@ -22,10 +22,7 @@ F:\Zooi\github\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debu
 F:\Zooi\github\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\MongoDB.Bson.dll
 F:\Zooi\github\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\MongoDB.Driver.dll
 F:\Zooi\github\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\Newtonsoft.Json.dll
-F:\Zooi\github\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\System.Net.Http.Formatting.dll
 F:\Zooi\github\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\MongoDB.Bson.xml
 F:\Zooi\github\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\MongoDB.Driver.xml
 F:\Zooi\github\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\Newtonsoft.Json.xml
-F:\Zooi\github\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\System.Web.Http.xml
-F:\Zooi\github\EventManagerServer\EventManagerServer\EventManagerServer\bin\Debug\System.Net.Http.Formatting.xml
 F:\Zooi\github\EventManagerServer\EventManagerServer\EventManagerServer\obj\Debug\EventManagerServer.csprojResolveAssemblyReference.cache
