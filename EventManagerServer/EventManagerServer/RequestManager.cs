@@ -57,6 +57,9 @@ namespace EventManagerServer
 				case "news":
 					HandleGetNews(args);
 					break;
+                case "mapitems":
+                    HandleGetMapItems(args);
+                    break;
 			}
 		}
 
@@ -84,10 +87,16 @@ namespace EventManagerServer
 				}
 			}
 		}
+
 		private void HandleGetEvents(RequestContainer args)
 		{
 			var events = databaseWrapper.GetEvents();
             args.Writer.WriteLine(events);
 		}
+
+        private void HandleGetMapItems(RequestContainer args) {
+            var mapItems = databaseWrapper.GetMapItems();
+            args.Writer.WriteLine(mapItems);
+        }
 	}
 }
