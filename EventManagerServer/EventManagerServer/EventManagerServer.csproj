@@ -54,6 +54,7 @@
     <Compile Include="Database\DatabaseWrapper.cs" />
     <Compile Include="Database\Objects\Color.cs" />
     <Compile Include="Database\Objects\Event.cs" />
+    <Compile Include="Database\Objects\MapImage.cs" />
     <Compile Include="Database\Objects\MapShape.cs" />
     <Compile Include="Database\Objects\NewsPost.cs" />
     <Compile Include="HttpHandler.cs" />

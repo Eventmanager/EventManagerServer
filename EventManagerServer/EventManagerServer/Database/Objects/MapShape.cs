@@ -11,10 +11,10 @@ namespace EventManagerServer.Database.Objects
     class MapShape
     {
         public ObjectId Id { get; set; }
-        public int width { get; set; }
-        public float[] longitudes { get; set; }
-        public float[] latitudes { get; set; }
-        public Color fill { get; set; }
-        public Color stroke { get; set; }
+        public int Width { get; set; }
+        public float[] Longitudes { get; set; }
+        public float[] Latitudes { get; set; }
+        public Color Fill { get; set; }
+        public Color Stroke { get; set; }
     }
 }

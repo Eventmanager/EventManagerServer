@@ -21,9 +21,11 @@ namespace EventManagerServer.Database
 		private MongoClient client;
 		private MongoServer server;
 		private MongoDatabase database;
+
 		private MongoCollection<NewsPost> newsPostCollection;
 		private MongoCollection<Event> eventCollection;
         private MongoCollection<MapShape> mapShapeCollection;
+        private MongoCollection<MapImage> mapImagesCollection;
 
 		public void Connect()
 		{
@@ -31,25 +33,34 @@ namespace EventManagerServer.Database
 			client = new MongoClient(connectionString);
 			server = client.GetServer();
 			database = server.GetDatabase("eventmanager");
+
 			newsPostCollection = database.GetCollection<NewsPost>("news");
 			eventCollection = database.GetCollection<Event>("events");
             mapShapeCollection = database.GetCollection<MapShape>("mapShape");
+            mapImagesCollection = database.GetCollection<MapImage>("mapImage");
             
-            /*
+            /*mapImagesCollection.Insert(new MapImage() {
+                Width = 20,
+                Latitude = 5,
+                Longitude = 5,
+                Rotation = 0f,
+                ImageName = "house"
+            });
+            
             mapShapeCollection.Insert(new MapShape() { 
-                width = 2,
-                latitudes = new float[] {20, 40, 0},
-                longitudes = new float[] {20, 40, 40},
-                fill = new Color(128, 255, 0, 0),
-                stroke = new Color(255, 0, 0, 0)
+                Width = 2,
+                Latitudes = new float[] {20, 40, 0},
+                Longitudes = new float[] {20, 40, 40},
+                Fill = new Color(128, 255, 0, 0),
+                Stroke = new Color(255, 0, 0, 0)
             });
 
             mapShapeCollection.Insert(new MapShape() {
-                width = 5,
-                latitudes = new float[] { 0, -40, -40, 0 },
-                longitudes = new float[] { 0, 0, -40, -40 },
-                fill = new Color(128, 0, 0, 255),
-                stroke = new Color(255, 255, 255, 255)
+                Width = 5,
+                Latitudes = new float[] { 0, -40, -40, 0 },
+                Longitudes = new float[] { 0, 0, -40, -40 },
+                Fill = new Color(128, 0, 0, 255),
+                Stroke = new Color(255, 255, 255, 255)
             });
             
             newsPostCollection.Insert(new NewsPost() { Contents = "very first test post", Date = DateTime.Parse("2009-02-20 14:39:54"), Title = "THE VERY FIRST TEST POST" });
@@ -119,31 +130,41 @@ namespace EventManagerServer.Database
 
         internal string GetMapItems() {
             var mapShapes = mapShapeCollection.FindAllAs<MapShape>();
+            var mapImages = mapImagesCollection.FindAllAs<MapImage>();
 
             var images = new List<JObject>();
-            //images.Add(new JObject("key", "value"));
+            foreach(MapImage image in mapImages) {
+                var obj = new JObject(
+                    new JProperty("width", image.Width),
+                    new JProperty("rotation", image.Rotation),
+                    new JProperty("imagename", image.ImageName),
+                    new JProperty("latitude", image.Latitude),
+                    new JProperty("longitude", image.Longitude)
+                );
+                images.Add(obj);
+            }
 
             var shapes = new List<JObject>();
             foreach(MapShape shape in mapShapes) {
                 var obj = new JObject(
-                    new JProperty("width", shape.width),
+                    new JProperty("width", shape.Width),
                     new JProperty("latitudes",
-                        new JArray(shape.latitudes)
+                        new JArray(shape.Latitudes)
                     ),
                     new JProperty("longitudes",
-                        new JArray(shape.longitudes)
+                        new JArray(shape.Longitudes)
                     ),
                     new JProperty("color", new JObject(
-                        new JProperty("r", shape.fill.r),
-                        new JProperty("g", shape.fill.g),
-                        new JProperty("b", shape.fill.b),
-                        new JProperty("a", shape.fill.a)
+                        new JProperty("r", shape.Fill.r),
+                        new JProperty("g", shape.Fill.g),
+                        new JProperty("b", shape.Fill.b),
+                        new JProperty("a", shape.Fill.a)
                     )),
                     new JProperty("stroke", new JObject(
-                        new JProperty("r", shape.stroke.r),
-                        new JProperty("g", shape.stroke.g),
-                        new JProperty("b", shape.stroke.b),
-                        new JProperty("a", shape.stroke.a)
+                        new JProperty("r", shape.Stroke.r),
+                        new JProperty("g", shape.Stroke.g),
+                        new JProperty("b", shape.Stroke.b),
+                        new JProperty("a", shape.Stroke.a)
                     ))
                 );
                 shapes.Add(obj);
